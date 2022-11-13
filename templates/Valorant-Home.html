@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'CSS/Home-styles.css' %}">
+</head>
+<body>
+<!--  Nav Bar -->
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Valorant Lobbies</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"></div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Sign up
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Player Signup</a></li>
+                        <li><a class="dropdown-item" href="#">Team Signup</a></li>
+                        <li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Duo Finder</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Team Battles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Match History</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--  First Section -->
+<div class="container" id="container-body">
+    <div class="row">
+        <p>This is my valorant home page</p>
+    </div>
+</div>
+<!--  Footer -->
+<hr>
+<div class="footer">
+    <h1 class="text-center">Follow our pages for news</h1>
+    <p class="text-center">Twitter Instagram Discord</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+</html>
